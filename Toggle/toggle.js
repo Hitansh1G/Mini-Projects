@@ -2,7 +2,7 @@ var toggled = false;
 
 var hTag = document.getElementsByTagName("h1")[0];
 var bodyTag = document.getElementsByTagName("body")[0];
-var circle = document.getElementById("circle");
+var small = document.getElementById("small");
 
 document.getElementById("toggle").onclick = function () {
         
@@ -10,7 +10,7 @@ document.getElementById("toggle").onclick = function () {
         
         hTag.classList.add("color-white");
         bodyTag.classList.add("bck-color-black");
-        circle.style.marginLeft = "100px";
+        small.style.marginLeft = "100px";
         
         toggled = true;
         
@@ -18,7 +18,7 @@ document.getElementById("toggle").onclick = function () {
         
         hTag.classList.remove("color-white");
         bodyTag.classList.remove("bck-color-black");
-        circle.style.marginLeft = "1px";
+        small.style.marginLeft = "1px";
         
         toggled = false;
         
