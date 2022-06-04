@@ -7,7 +7,7 @@ body {
 #counter-value {
     padding: 40px 0;
     margin: 50px 0;
-    background-image: linear-gradient(45deg, #a4f2f2, #efa7d7);
+    background-image: linear-gradient(45deg, #243B55, #1CB5E0);
     text-align: center;
 }
 
@@ -45,7 +45,7 @@ body {
 
 
 #counter-container {
-    background-color: #555555;
+    background-color: black;
     height: 200px;
     width: 80%;
     margin: auto;
