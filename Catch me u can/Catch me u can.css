@@ -1,0 +1,14 @@
+#box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box p{
+    font-size: 1.7rem;
+    color: yellow;
+    position: absolute;
+}
