@@ -13,6 +13,8 @@ header {
     height: 30px;
     width: 20vw;
     background-color: transparent;
+    /* left: 30px; */
+    /* position: relative; */
     text-align: center;
     color: #1b994d;
     border-radius: 20px;
@@ -59,7 +61,7 @@ header {
 }
 
 .gallery-image-container {
-    max-width: 400px;
+    max-width: 900px;
     overflow: hidden;
     margin: 30px;
     background-size: cover;
