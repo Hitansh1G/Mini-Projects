@@ -41,13 +41,16 @@ let windowWidth = window.innerWidth,
 
 
 function resetBoard(rodName) {
-
+    //this is to reset the board after a game or starting the game
+    //for rod 1 , rod 2 and the ball 
     rod1.style.left = (window.innerWidth - rod1.offsetWidth) / 2 + 'px';
     rod2.style.left = (window.innerWidth - rod2.offsetWidth) / 2 + 'px';
     ball.style.left = (windowWidth - ball.offsetWidth) / 2 + 'px';
 
 
     // Lossing player gets the ball
+    //considering up to down as positive 
+    //and down to up as negative
     if (rodName === rod2Name) {
         ball.style.top = (rod1.offsetTop + rod1.offsetHeight) + 'px';
         ballSpeedY = 2;
@@ -62,7 +65,7 @@ function resetBoard(rodName) {
 }
 
 
-
+//this function to store the top score 
 function storeWin(rod, score) {
 
     if (score > maxScore) {
@@ -85,7 +88,7 @@ window.addEventListener('keypress', function () {
 
     let rodRect = rod1.getBoundingClientRect();
 
-
+    //on pressing "D" or "A" it the rods will move either left or right
     if (event.code === "KeyD" && ((rodRect.x + rodRect.width) < window.innerWidth)) {
         rod1.style.left = (rodRect.x) + rodSpeed + 'px';
         rod2.style.left = rod1.style.left;
